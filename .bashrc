@@ -35,6 +35,7 @@ alias gco='git checkout'
 alias gl='git log'
 alias gme='git merge'
 alias l='ls'
+alias du='du -h . -d 1'
 
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
