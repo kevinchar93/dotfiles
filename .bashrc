@@ -35,6 +35,7 @@ alias gcm='git commit -m'
 alias gco='git checkout'
 alias gl='git log'
 alias gme='git merge'
+alias gsb='git submodule update --init'
 alias l='ls'
 alias du='du -h . -d 1'
 
