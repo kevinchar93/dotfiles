@@ -1,10 +1,12 @@
+# Read proxies file
+source ~/.proxies
+
 # Interactive operation...
 alias rm='rm -i'
 
 # Default to human readable figures
 alias df='df -h'
 alias du='du -h'
-
 
 # Misc :)
 alias less='less -r'                          # raw control characters
