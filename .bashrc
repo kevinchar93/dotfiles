@@ -15,14 +15,15 @@ alias grep='grep --color'                     # show differences in colour
 alias egrep='egrep --color=auto'              # show differences in colour
 alias fgrep='fgrep --color=auto'              # show differences in colour
 
-# Some shortcuts for different directory listings
 alias ls='ls -hF --color=tty'                 # classify files in colour
 alias dir='ls --color=auto --format=vertical'
 alias vdir='ls --color=auto --format=long'
 alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
-alias l='ls -CF'                              #
+alias l='ls -CF'
 alias f='find . -name'
+alias du='du -h . -d 1'
+
 alias gd='git difftool'
 alias gm='git mergetool'
 alias gs='git status'
@@ -38,8 +39,10 @@ alias gco='git checkout'
 alias gl='git log'
 alias gme='git merge'
 alias gsb='git submodule update --init'
-alias l='ls'
-alias du='du -h . -d 1'
+alias gdn='git diff --name-only'
+alias gdnm='git diff --name-only master'
+
+
 
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
