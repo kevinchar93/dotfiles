@@ -41,6 +41,7 @@ alias gme='git merge'
 alias gsb='git submodule update --init'
 alias gdn='git diff --name-only'
 alias gdnm='git diff --name-only master'
+alias gcln='git clean -fdx'
 
 
 
